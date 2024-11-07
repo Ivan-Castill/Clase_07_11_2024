@@ -3,16 +3,26 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-
         Scanner ingreso=new Scanner(System.in);
-        String val1;
+        int val1;
         double con_val1;
 
         System.out.println("Ingrese el valor a convertir: ");
-        val1=ingreso.nextLine();
-        con_val1=Double.parseDouble(val1);
+        val1=ingreso.nextInt();
+        con_val1=Double.parseDouble(String.valueOf(val1));
 
         System.out.print("El resultado del valor convetido a double es: "+con_val1);
+
+
+        //Scanner ingreso=new Scanner(System.in);
+        //String val1;
+        //double con_val1;
+
+        //System.out.println("Ingrese el valor a convertir: ");
+        //val1=ingreso.nextLine();
+        //con_val1=Double.parseDouble(val1);
+
+        //System.out.print("El resultado del valor convetido a double es: "+con_val1);
 
 
         //Scanner ingreso=new Scanner(System.in);
